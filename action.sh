@@ -17,14 +17,14 @@ fi
 
 if [ -n "${CUSTOM_DOMAIN}" ]; then
     print_info "Setting custom domain for github pages"
-    echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/CNAME"
+    echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/wiki/CNAME"
 fi
 
 if [ -n "${CONFIG_FILE}" ]; then
     print_info "Setting custom path for mkdocs config yml"
     export CONFIG_FILE="${GITHUB_WORKSPACE}/${CONFIG_FILE}"
 else
-    export CONFIG_FILE="${GITHUB_WORKSPACE}/wiki/mkdocs.yml"
+    export CONFIG_FILE="${GITHUB_WORKSPACE}/mkdocs.yml"
 fi
 
 if [ -n "${GITHUB_TOKEN}" ]; then
