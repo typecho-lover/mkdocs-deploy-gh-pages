@@ -17,7 +17,7 @@ fi
 
 if [ -n "${CUSTOM_DOMAIN}" ]; then
     print_info "Setting custom domain for github pages"
-    echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/docs/CNAME"
+    echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/CNAME"
 fi
 
 if [ -n "${CONFIG_FILE}" ]; then
