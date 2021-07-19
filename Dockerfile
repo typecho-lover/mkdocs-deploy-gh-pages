@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material:6.1.4
+FROM squidfunk/mkdocs-material:7.1.11
 LABEL maintainer="Michael Hausenblas, hausenbl@amazon.com"
 
 RUN pip install mkdocs-git-revision-date-plugin
